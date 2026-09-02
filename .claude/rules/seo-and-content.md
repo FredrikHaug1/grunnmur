@@ -33,30 +33,34 @@ individual courses.
 
 ## Every page must offer a next step
 
-Blog posts lose 90–98% of readers with no second click — including on-strategy
-customer stories. Structurally there is no related content, no contextual next step,
-no path onward.
+**The blog exists to move readers toward the product or a conversation.** Not brand
+awareness, not reach. That is settled, so the 90–98% exit rate is a **defect**, and
+the fix is structural rather than editorial.
 
-> TODO(decision needed): whether this is a defect depends on an unmade decision —
-> "what is the blog *for*?" If it is brand awareness, 90% exit is acceptable and the
-> metric is reach. If it is meant to move readers toward the product or a
-> conversation, it is failing and the fix is structural. Do not treat exit rate as a
-> bug until this is answered.
+Every post ships with related content, a contextual next step, and a CTA matched to
+the reader's likely intent. A post that earns a visit and offers nowhere to go is not
+finished — this applies to the on-strategy content most of all, since customer stories
+and the kollektiv-kompetanse pieces pull strong readership and currently lose every
+reader.
 
-## Thin content and consolidation
+## The course catalogue is removed
 
-821 pages are "Crawled – currently not indexed" — Google has seen them and judged
-them not worth indexing. That is 68% of the not-indexed pile and the textbook
-fingerprint of thin content. 336 `/kurs/*` pages average ~17 unique pageviews each
-over 5.5 months.
+**The `/kurs` branch does not exist on the new site.** Not consolidated — removed. All
+336 course pages, the category pages, and the `/kurs` hub itself are gone.
 
-**Do not mass-prune.** Model the internal-linking and topical-authority impact first.
-Thin pages can carry link-graph value, and catalogue depth may serve the enterprise
-sales conversation even while underperforming as content.
+Courses return later as an **API-driven listing** serving brand awareness and the sales
+team, not as indexable content pages. Until that exists, there is no catalogue.
 
-> TODO(decision needed): what the course catalogue is *for* is an open management
-> decision — sales-credibility asset, or content resource better spent elsewhere.
-> Consolidation scope depends on the answer.
+This resolves the thin-content problem by deletion: the 821 "Crawled – currently not
+indexed" pages — 68% of the not-indexed pile, the textbook fingerprint of thin content
+— stop existing rather than needing a consolidation model.
+
+Redirect handling for the removed branch is in [`redirects.md`](redirects.md).
+
+**Consequence to plan for:** `/kurs` was the strongest non-homepage entry point on the
+old site (2,103 unique pageviews, 25% bounce, a genuine springboard). Removing it
+forfeits that traffic deliberately. Expect an organic dip and do not read it as a
+regression.
 
 ## Index hygiene backlog
 

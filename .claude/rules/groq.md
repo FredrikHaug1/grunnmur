@@ -75,25 +75,45 @@ const courseFields = `
 `
 ```
 
-## Client configuration
+## Client configuration — `useCdn` is always `true`
 
-**`useCdn: true` in production, `false` in preview.**
+**Nothing in the request path may set `useCdn: false`.** This is not a preference.
+A previous build set it to `false` globally, bypassed the CDN entirely and caused an
+**API usage spike**. That is the reason the rule exists.
+
+There are exactly **two** clients, and never a third:
 
 ```ts
+// client.ts — all public rendering
 createClient({
-  useCdn: !isPreview,
-  perspective: isPreview ? 'drafts' : 'published',
+  useCdn: true,
+  perspective: 'published',
+  // no token
 })
 ```
 
-Published traffic goes through the CDN. Preview and draft reads bypass it so editors
-see changes immediately — the Deployment QA step in
-[`qa-and-launch.md`](qa-and-launch.md) requires content to render correctly in the
-Vercel preview before merge, which a stale CDN read would defeat.
+```ts
+// live.ts — drafts and preview
+export const {sanityFetch, SanityLive} = defineLive({
+  client,
+  serverToken: process.env.SANITY_API_READ_TOKEN,
+})
+```
 
-Consequence to remember when debugging: there are **two** cache layers in production
-— Sanity's CDN and the app's own cache. Content that looks stale in production but
-fresh in preview is the CDN, not the app.
+**Draft and preview reads go through the Live Content API, not through a
+`useCdn: false` client.** `defineLive()` from `next-sanity` handles the draft
+perspective and live updates; that is what gives editors immediate feedback, which is
+what the Deployment QA step in [`qa-and-launch.md`](qa-and-launch.md) requires.
+
+If you find yourself wanting fresher data than the CDN gives, the answer is a cache
+tag and `revalidateTag`, not a second client with the CDN switched off.
+
+## Stega must be stripped before it reaches anything that parses
+
+Draft reads carry stega-encoded metadata inside string values. Run `stegaClean` before
+any value reaches a URL, a `srcset`, a date parser, or a `className` — invisible
+characters in a class name silently break styling, and in a URL silently break the
+link.
 
 ## Redirect lookups must be cached
 
@@ -102,6 +122,7 @@ uncached from it. See [`redirects.md`](redirects.md).
 
 ## Source
 
-- Repo-owner decisions, 2026-09-02 (TypeGen, `useCdn`, slug resolution, datasets)
+- Repo-owner decisions, 2026-09-02 (TypeGen, slug resolution, datasets, and the
+  always-`true` `useCdn` rule adopted from the API-spike incident)
 - `atlassian/projects/handling-of-redirects.md` (cached redirect lookup requirement)
 - `atlassian/10-qa-and-launch.md` §3.9 (preview must render current content)

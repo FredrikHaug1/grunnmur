@@ -12,7 +12,7 @@ Applies to every UI surface on videocation.no. Tokens live in
 - DM Sans 600, 16px
 - Border-radius 20px (pill)
 - Padding 10px 24px
-- Hover: Nordic Sun Light
+- Hover: Nordic Sun Light `#FFEA8F`
 
 ### Secondary
 
@@ -55,13 +55,10 @@ Nordic minimalism. Space is not waste — it is the message.
 
 - Line iconography, never filled.
 - 20px inline, 24px standalone.
-- Nordic Fjord `#00A7B5` for decorative/informational use.
+- Nordic Fjord `#00A7B5` for decorative/informational use. This is deliberate — Fjord
+  is the informational accent and is exempt from the interactive-only rule that binds
+  Nordic Sun. See [`design-tokens.md`](design-tokens.md).
 - Dark Gray `#404040` for functional use.
-
-> TODO(decision needed): this conflicts with the accent rule in
-> [`design-tokens.md`](design-tokens.md) — Nordic Fjord is an accent colour, and
-> accents are reserved for interactive elements. Same open decision, tracked in both
-> files.
 
 ## Photography
 

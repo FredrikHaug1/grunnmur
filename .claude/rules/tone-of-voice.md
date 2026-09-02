@@ -7,9 +7,15 @@ translated.
 
 ## The voice
 
-Three words, all sourced: **jordnær, ærlig, selvsikker**.
+Four words: **jordnær, uformell, ærlig, selvsikker**.
 
 In practice: `korte setninger, aktiv form, ingen superlativer`.
+
+**Uformell** — muntlig, personlig og vennlig, med et glimt i øyet. Emojis med måte.
+Never slang, never sloppy punctuation, never a flippant tone.
+
+Without *uformell* the other three read colder than intended: honest and confident
+without warmth is just blunt.
 
 Never use: jargon · superlatives · false precision.
 
@@ -93,13 +99,11 @@ weakness in a customer's organisation without evidence.
 - Spelling and grammar reviewed?
 - Has the Norwegian copy been approved?
 
-> TODO(decision needed): the pre-rework `TOV.md` also specified a fourth value word
-> *Uformell* (muntlig, glimt i øyet, emojis med måte), a LIKS score target of 20–35,
-> a ChatGPT policy, structural templates for LinkedIn posts, blog posts and customer
-> stories, a 60-character title limit, a 150–160-character meta description, and the
-> checks *"written as Videocation, not as an individual"*, *"can it be said more
-> simply"* and *"active present tense"*. **None of it appears anywhere in
-> `atlassian/`.** Re-authorise it or let it stay dropped.
+**Deliberately not rules.** The pre-rework `TOV.md` also carried a LIKS score target of
+20–35, a ChatGPT policy, structural templates for LinkedIn posts, blog posts and
+customer stories, a 60-character title limit and a 150–160-character meta description.
+None of it appears in `atlassian/`, and it was dropped on 2026-09-02. Only *uformell*
+was restored. Do not reintroduce the rest as if it were sourced.
 
 ## Source
 

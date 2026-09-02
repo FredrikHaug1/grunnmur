@@ -15,11 +15,18 @@ The primary CTA is normally **Book a demo**. The most important secondary CTA is
 On cold-traffic and campaign pages the free analysis may become primary; on warm and
 high-intent pages Book a demo stays primary.
 
-> TODO(decision needed): the free-analysis CTA is written four different ways across
-> the docs — "Get a free competence analysis" (`05 §4.1`, `03 §12.4`), "Get a free
-> benchmark analysis" (`05 §4.7`), the nav label "Free analysis" (`05 §3`), and
-> "Benchmark min bedrift" (benchmark spec §1, Norwegian). Pick the canonical Norwegian
-> label and the canonical nav label.
+## The canonical free-analysis label
+
+The docs use four different labels for this CTA. **These two are canonical:**
+
+| Place | Label |
+| --- | --- |
+| CTA, anywhere on the page | **Få en gratis kompetanseanalyse** |
+| Top-level navigation | **Gratis analyse** |
+
+"Benchmark min bedrift", "Get a free benchmark analysis" and "Free analysis" are all
+superseded. `kompetanse` is the word the positioning and the buyer vocabulary are
+built on; `benchmark` is English jargon and the tone rules ban jargon.
 
 ## Banned CTAs
 

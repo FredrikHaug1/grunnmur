@@ -46,7 +46,8 @@ enforceable.
 | The AI analysis / benchmark tool                        | `.claude/rules/diagnostic-tool.md`    |
 | Building the benchmark table behind that tool           | `.claude/rules/diagnostic-benchmark.md` |
 | What the diagnostic report says and how                 | `.claude/rules/diagnostic-report.md`  |
-| Creating or moving a component                          | `.claude/rules/atomic-structure.md`   |
+| Creating or moving a component, module or section       | `.claude/rules/component-structure.md` |
+| What a section owns vs a module                         | `.claude/rules/section-module-model.md` |
 | Sanity schemas, Portable Text, datasets                 | `.claude/rules/sanity-schema.md`      |
 | Writing GROQ, client config, caching                    | `.claude/rules/groq.md`               |
 
@@ -68,15 +69,21 @@ enforceable.
 - `slug.current` holds the **full path** (`kurs/ledelse/lederkurs`), not a leaf segment.
 - Types come from **Sanity TypeGen**, not hand-written Zod. Zod is for untrusted
   input only.
+- **`useCdn` is always `true`.** Never `false` in the request path — that caused an
+  API usage spike once already. Drafts go through the Live Content API, not a second
+  client.
 - Every query is wrapped in `defineQuery` — an inline GROQ string is silently untyped.
 - Always project explicitly. Never return a bare document.
 
 **Components**
 
 - **Named exports only.** No default exports anywhere in the component tree.
-- Imports point strictly downward: templates → organisms → molecules → atoms.
-  Cross-layer imports are absolute (`@/components/atoms/Button`); siblings are
-  relative. `'../../'` means the component is in the wrong layer.
+- Imports point strictly downward: sections → modules → components.
+- **`components/` never imports a Sanity type.** If it does, it belongs in `modules/`.
+- **Never build a Tailwind class dynamically** (`` `pt-${x}` ``). Tokens map to classes
+  through static lookup objects, or the compiler never generates the class.
+- Sections own spacing, background and width. Modules own content and must not set
+  their own vertical padding or background.
 
 **Design**
 
@@ -88,11 +95,15 @@ enforceable.
 
 **Copy**
 
-- Never ship `Learn more`, `Submit`, or `Get started` as a CTA.
+- Never ship `Learn more`, `Submit`, `Download` or `Get started` as a CTA.
+- The free-analysis CTA is **Få en gratis kompetanseanalyse**; its nav label is
+  **Gratis analyse**. The other three labels in the docs are superseded.
+- Voice is four words, not three: `jordnær, uformell, ærlig, selvsikker`.
 - Never ship `Empower`, `Unlock potential`, `Seamless`, `Next-generation`, or
   `Transform your workforce` as a standalone claim.
-- Voice is `jordnær, ærlig, selvsikker` — korte setninger, aktiv form, ingen
-  superlativer.
+- Korte setninger, aktiv form, ingen superlativer.
+- **There is no course catalogue.** `/kurs` and everything under it is gone and 308s
+  to `/`. Courses return later as an API-driven listing, not as indexable pages.
 
 **Redirects**
 
@@ -103,13 +114,23 @@ enforceable.
 
 ## Open decisions
 
-Rules containing `TODO(decision needed)` are unresolved and must not be guessed past:
-`design-tokens.md` (three colour conflicts) · `design-components.md` (accent vs icon
-colour) · `cta-and-conversion.md` (CTA label) · `diagnostic-tool.md` (refresh cadence, Vainu
-licensing gate, five open parameters) · `diagnostic-benchmark.md` (NACE terminal rung,
-stability multiple) · `redirects.md` (cache mechanism) · `seo-and-content.md` (catalogue purpose, what the blog is for) ·
-`qa-and-launch.md` (smoke-test skill) · `tone-of-voice.md` (orphaned voice rules) ·
-`atomic-structure.md` (entire file unsourced) · this file (commands).
+Nearly everything was settled on 2026-09-02. Three items remain, and they must not be
+guessed past:
+
+- **The benchmark sample's employee threshold** — `diagnostic-benchmark.md`,
+  `diagnostic-tool.md`. The floor below which a company is excluded from the sample.
+- **Vainu licensing** — `diagnostic-tool.md`. Unconfirmed, and it gates the private
+  margin comparison, which is the whole teaser.
+- **Commands** — this file. No `package.json` exists yet.
+
+## A deleted spec you may hear about
+
+`marketing-site-specs.md` was removed on 2026-09-02 — it called itself a system prompt
+and was riddled with superseded decisions (Proxima Nova, a `#333333`/`#FFE880` palette,
+a `production` dataset). **`atlassian/` wins every time.** Three things were salvaged
+before deletion and now live in the rules: the section/module model, the token→class
+discipline, and the always-`true` `useCdn` rule. If a branch or comment cites that
+file, it is citing something that no longer exists — check the rules instead.
 
 ## Subagents
 

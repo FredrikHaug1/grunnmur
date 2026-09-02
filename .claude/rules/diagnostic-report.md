@@ -111,6 +111,20 @@ last signals confidence and keeps the top of the report useful.
 
 Always rank 3–5 competence priorities and end with a suggested next step.
 
+## The next step branches on the result
+
+The onward CTA is **not fixed**. It is chosen from what the analysis found:
+
+| Result | Next step |
+| --- | --- |
+| Below median — a concrete, named gap | **Book a demo / ta en prat.** There is something specific to discuss, and this is the warmest moment on the site. |
+| Around or above median | The free KI-programme, or another lower-friction step. There is no gap to fix, so a sales CTA has nothing to point at. |
+| Benchmark-free (public / non-profit) | Lower-friction step — the report has raised a question, not measured a shortfall. |
+
+This makes the CTA data-dependent, which is more build work than a single fixed
+button. It is worth it: offering "book a demo to close your gap" to a company that is
+already outperforming its industry reads as though nobody looked at the numbers.
+
 ## Language and hedging
 
 Norwegian bokmål. Voice per [`tone-of-voice.md`](tone-of-voice.md). Separate observed

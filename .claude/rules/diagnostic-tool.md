@@ -16,8 +16,14 @@ their industry.
 **Phase A — build time, batch.** Compute an industry benchmark table keyed by NACE
 code from Vainu data, on our schedule. All cost and heavy lifting lives here.
 
-**Phase B — runtime.** Org number → one Vainu lookup (NACE, own margin, employees,
-domain) → match the pre-computed table → teaser → email gate → full report.
+**Phase B — runtime.** Org number → **BRREG** for name, legal form and NACE (free) →
+target-function fork → **private only:** one Vainu lookup for financials → match the
+pre-computed table → teaser → email gate → full report.
+
+**BRREG first, Vainu only when financials are actually needed.** Public-sector and
+non-profit visitors run benchmark-free and never need a margin, so they cost zero
+Vainu enrichments. With Vainu priced per enrichment and its licensing still
+unconfirmed, that materially reduces exposure.
 
 **The expensive analysis runs only after a verified email.** Spend follows real
 leads, not tire-kickers.
@@ -26,25 +32,38 @@ leads, not tire-kickers.
 
 | Parameter | Value |
 | --- | --- |
-| Data source (v1) | Vainu, sole source |
+| Identification + legal form | BRREG (free) |
+| Financials | Vainu (paid, private only) |
 | Sample-size floor per NACE level | **50 companies** |
 | Headline statistics | **Median + p25/p75** |
 | Top-performer lookback | 3 years, consistent, anonymised |
 | Expensive analysis | Post-gate only |
-| Roll-up floor of last resort | **Disputed** — see `diagnostic-benchmark.md` |
+| Roll-up floor of last resort | **SSB 9-category** |
+| Benchmark refresh | **Quarterly** |
 
 Benchmark construction, roll-up, outlier handling and the top-performer rule are in
 [`diagnostic-benchmark.md`](diagnostic-benchmark.md).
 
-> TODO(decision needed): refresh cadence is stated twice and differently — "refreshed
-> yearly" (§2) versus "Quarterly" (§12). Pick one.
+**Refresh is quarterly.** The architecture spec §2 says "yearly"; that is superseded.
+Norwegian annual accounts land on a rolling deadline, so a quarterly rebuild keeps the
+table current as filings arrive instead of letting it drift for eleven months — and
+the credibility of the whole tool rests on that number being current.
 
 ## Missing margin — the flow must not break
 
-Common for new companies, sole proprietorships and simplified accounts. When no
-usable margin exists: show the industry benchmark anyway, and run the competence
-analysis for the *industry* without the personal gap. Still useful, still captures
-the lead.
+Common for new companies, sole proprietorships and simplified accounts. When no usable
+margin exists: **show the industry benchmark and name the gap plainly.** Median, spread
+and top-performer range, plus a competence analysis for the *industry* without the
+personal comparison.
+
+Say why, in the honest register the rest of the report uses:
+
+> Vi fant ikke regnskapstall for deres selskap. Her er bransjen.
+
+Do not ask the visitor to type their own margin — that is friction at the exact moment
+we are trying to prove value cheaply, and a self-reported number undoes the "we did the
+work for you" effect. Do not route them to the benchmark-free public-sector report
+either; a private company should not be told it is being analysed like a municipality.
 
 ## Honesty rails — mandatory in copy
 
@@ -79,13 +98,20 @@ preview of the full report.
 
 **Vainu licensing is not confirmed.** Pricing is per-enrichment, and the licence may
 restrict surfacing Vainu data in a public-facing product. Settle it with the Vainu
-account contact **before** build. "Vainu, sole source" above is the intended design,
-not a cleared one. Also unresolved: what share of visitor-type companies have a usable
-margin, and how stale the table can get before it stops being credible.
+account contact **before** build — the financials half of the tool depends on it.
+Routing identification through BRREG reduces the exposure but does not remove it: the
+private-sector margin comparison, which is the whole teaser, still needs Vainu. Also
+unresolved: what share of visitor-type companies have a usable margin, and how stale
+the table can get before it stops being credible.
 
-> TODO(decision needed): open per architecture spec §11 — sample selection method ·
-> onward CTA after the full report · stability multiple · missing-margin UX · whether
-> BRREG stays as a free identification fallback.
+All five of architecture spec §11's open parameters were settled on 2026-09-02:
+sample selection is **random above an employee threshold**; the onward CTA
+**branches on the result**; the stability multiple is **1.5×**; the missing-margin UX
+**shows the industry benchmark and says so**; BRREG **stays** as the free
+identification step.
+
+> TODO(decision needed): the employee threshold itself — the floor below which a
+> company is excluded from the benchmark sample — is still unset.
 
 ## Required disclaimer
 

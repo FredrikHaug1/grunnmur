@@ -12,6 +12,14 @@ per NACE code.
 **Sample-size floor: 50 companies** per NACE level. Below it the numbers are not
 stable enough to defend, and the code rolls up.
 
+**Selection is random above an employee threshold**, never top-N by revenue. A median
+is meant to describe the industry's actual middle; picking the largest firms biases it
+upward and would tell a 38-person consultancy it trails a median built from the giants
+in its code — which is not the comparison the report claims to make. The employee floor
+exists to exclude shells and dormant entities, not to skew toward size.
+
+> TODO(decision needed): the employee threshold value is unset.
+
 Store per qualifying NACE level: sample size (n) · **median** operating margin ·
 mean (context only) · **p25 and p75** · validated top-performer range · outlier
 trimming applied · computation date. Plus, once for the whole sample, the
@@ -25,9 +33,11 @@ Use the most granular level meeting the 50-company floor, walking up until it do
 5-digit → 4-digit → 3-digit → 2-digit → SSB 9-category (last resort)
 ```
 
-> TODO(decision needed): the two specs disagree on the terminal rung. The benchmark
-> architecture spec §4.3 ends at **SSB 9-category**; the method spec §10.1 ends at
-> **archetype-level**. These are different data structures to build. Pick one.
+The cascade ends at **SSB 9-category**. The method spec §10.1 ends at
+*archetype-level* instead; that is superseded. SSB is a real published Norwegian
+classification, so the fallback label still names something the reader recognises —
+whereas being benchmarked against "Project & expert services" would compare them to a
+category of our own invention that they have never heard of.
 
 Granularity is **data-driven per code**, never hand-collapsed upfront. Manual
 collapsing bakes in judgement calls we would have to defend, and throws away precision
@@ -59,7 +69,7 @@ A company qualifies as industry top performer **only if all three hold**:
 1. It has filed accounts for the **last 3 years**
 2. Its margin is in the top of the distribution in **each** of those years, not just
    the latest
-3. Its margins are **stable** — no single year exceeds a set multiple of its own
+3. Its margins are **stable** — no single year exceeds **1.5×** its own
    multi-year median (this catches the firm that placed high on one inflated year)
 
 **Output a range, never a single number:** *"Den beste i bransjen har ligget på
@@ -71,7 +81,10 @@ company "best in industry" off our own calculation is a public claim about them,
 if our extraction is off it is a liability. This is a legal control, not a style
 preference.
 
-> TODO(decision needed): the stability multiple in criterion 3 is unset.
+**The stability multiple is 1.5×.** Tight enough to exclude a firm whose strong year
+came from a one-off contract or an asset sale, loose enough to tolerate normal
+year-to-year variation in a services business. A firm doubling its own median in a
+single year is exactly the accounting blip this criterion exists to catch.
 
 ## Data-quality caveat
 

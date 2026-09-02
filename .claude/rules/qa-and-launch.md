@@ -23,9 +23,20 @@ generate qualified B2B leads or build the brand.
 - No regressions before merging to `main`
 - Merge only after checks pass, or known issues are documented and accepted
 
-> TODO(decision needed): `10 §3.9` requires running the `visual-smoke-test` skill via
-> Claude Code against the preview URL. That skill was deleted in the rework and does
-> not exist. Restore it, replace it, or drop the step.
+The visual smoke test is an **automated Playwright check in CI**, run against the
+Vercel preview URL. `10 §3.9` describes a manually invoked Claude Code skill; that
+skill was deleted and is not coming back — a check nobody remembers to run is not a
+gate.
+
+It must assert, at minimum:
+
+- Every key route returns 200 — no 404, no 500
+- No uncaught console errors
+- Screenshots captured at **375px, 768px and 1440px**, the three viewports the
+  definition of done already requires
+- No regression against the previous run's screenshots
+
+A failing smoke test blocks the merge unless the failure is documented and accepted.
 
 ## Accessibility
 

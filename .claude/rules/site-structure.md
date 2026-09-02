@@ -42,24 +42,25 @@ an important conversion path. It is not yet a proven one — see
 
 ## Per-section CTAs
 
-Each row below is faithful to its own source paragraph, but the docs use four
-different labels for the free analysis. **The exact wording is unresolved** — see the
-TODO in [`cta-and-conversion.md`](cta-and-conversion.md). Treat the *slots* as fixed
-and the *labels* as provisional, and do not ship a Norwegian label from this table
-without checking that TODO first.
+The free-analysis CTA is **Få en gratis kompetanseanalyse**, and its nav label is
+**Gratis analyse**. See [`cta-and-conversion.md`](cta-and-conversion.md) — the other
+three labels in the docs are superseded.
+
+Slots below are fixed. English wording is the doc's intent — the shipped label is
+Norwegian, and the free-analysis one is fixed as **Få en gratis kompetanseanalyse**.
 
 | Section | Primary CTA | Secondary CTA |
 | --- | --- | --- |
-| Homepage | Book a demo | Get a free competence analysis |
-| Solution pages | Book a demo | Contextual — "See example programme" or free analysis |
+| Homepage | Book a demo | Få en gratis kompetanseanalyse |
+| Solution pages | Book a demo | Contextual — "See example programme", or the free analysis |
 | Platform | See the platform, or Book a demo | — |
 | Programmes and content | Explore programmes | Book a demo |
 | Customers | See how this could work for your organisation | — |
 | Resources | Depends on intent level | — |
-| Free analysis | Get a free benchmark analysis | — |
+| Free analysis | Få en gratis kompetanseanalyse | — |
 
 Resource CTAs by intent: early → **Read guide**, **Explore resources**;
-medium → **Get a free analysis**; high → **Book a demo**.
+medium → **Få en gratis kompetanseanalyse**; high → **Book a demo**.
 
 ## Solution pages
 
