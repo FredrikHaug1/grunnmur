@@ -112,8 +112,8 @@ Motion must be pausable or non-disruptive.
 
 ## Source
 
-- `atlassian/04-design-system.md` §4 (interactive elements), §5 (layout and spacing),
+- [`atlassian/04-design-system.md`](../../atlassian/04-design-system.md) §4 (interactive elements), §5 (layout and spacing),
   §6 (photography and visual elements), §7 (logo)
-- `atlassian/03-best-practice-guide-b2b-marketing-site.md` §9.1–9.5 (visual design
+- [`atlassian/03-best-practice-guide-b2b-marketing-site.md`](../../atlassian/03-best-practice-guide-b2b-marketing-site.md) §9.1–9.5 (visual design
   principles, motion)
-- `atlassian/10-qa-and-launch.md` §3.3 (design QA)
+- [`atlassian/10-qa-and-launch.md`](../../atlassian/10-qa-and-launch.md) §3.3 (design QA)

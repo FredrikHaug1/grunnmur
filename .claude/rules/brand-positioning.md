@@ -97,11 +97,11 @@ Customer · Challenge · Solution · Implementation · Result · Quote · Releva
 
 ## Source
 
-- `atlassian/02-target-audience-and-positioning.md` §1 (audience, roles, needs, lead
+- [`atlassian/02-target-audience-and-positioning.md`](../../atlassian/02-target-audience-and-positioning.md) §1 (audience, roles, needs, lead
   definitions), §2 (positioning, essence, brand personality)
-- `atlassian/01-strategy-and-okrs.md` (the two objectives)
-- `atlassian/05-site-structure-and-user-journeys.md` §2 (strategic principle), §4.5
+- [`atlassian/01-strategy-and-okrs.md`](../../atlassian/01-strategy-and-okrs.md) (the two objectives)
+- [`atlassian/05-site-structure-and-user-journeys.md`](../../atlassian/05-site-structure-and-user-journeys.md) §2 (strategic principle), §4.5
   (customer story structure)
-- `atlassian/03-best-practice-guide-b2b-marketing-site.md` §11 (trust and proof
+- [`atlassian/03-best-practice-guide-b2b-marketing-site.md`](../../atlassian/03-best-practice-guide-b2b-marketing-site.md) §11 (trust and proof
   architecture)
-- `atlassian/10-qa-and-launch.md` §3.2 (positioning QA)
+- [`atlassian/10-qa-and-launch.md`](../../atlassian/10-qa-and-launch.md) §3.2 (positioning QA)

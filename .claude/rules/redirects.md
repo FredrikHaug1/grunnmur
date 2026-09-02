@@ -140,6 +140,6 @@ existence in middleware.**
 
 ## Source
 
-- `atlassian/projects/handling-of-redirects.md` (entire document)
-- `atlassian/research/technical-seo-site-structure-visitor-journey.md` §8 (index
+- [`atlassian/projects/handling-of-redirects.md`](../../atlassian/projects/handling-of-redirects.md) (entire document)
+- [`atlassian/research/technical-seo-site-structure-visitor-journey.md`](../../atlassian/research/technical-seo-site-structure-visitor-journey.md) §8 (index
   hygiene: 101 404s, 161 redirects, 4 redirect errors)

@@ -110,4 +110,4 @@ Acronyms UPPERCASE.
 
 ## Source
 
-- `atlassian/04-design-system.md` §1 (colour), §2 (typography), §3 (typography guidelines)
+- [`atlassian/04-design-system.md`](../../atlassian/04-design-system.md) §1 (colour), §2 (typography), §3 (typography guidelines)

@@ -108,8 +108,8 @@ Conversion · Brand memory.
 
 ## Source
 
-- `atlassian/06-page-briefs.md` §2 (when to brief), §3 (principles), §4 (template
+- [`atlassian/06-page-briefs.md`](../../atlassian/06-page-briefs.md) §2 (when to brief), §3 (principles), §4 (template
   fields), §5 (page structures), §8.4 (acceptance criteria)
-- `atlassian/03-best-practice-guide-b2b-marketing-site.md` §5.1 (hero), §7 (homepage
+- [`atlassian/03-best-practice-guide-b2b-marketing-site.md`](../../atlassian/03-best-practice-guide-b2b-marketing-site.md) §5.1 (hero), §7 (homepage
   structure), §8 (solution page structure), §10.1–10.2 (show then tell)
-- `atlassian/08-delivery-and-jira.md` §2.4 (no page without an approved brief)
+- [`atlassian/08-delivery-and-jira.md`](../../atlassian/08-delivery-and-jira.md) §2.4 (no page without an approved brief)

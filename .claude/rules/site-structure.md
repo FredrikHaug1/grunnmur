@@ -119,7 +119,7 @@ example leadership programme · a demo CTA · a free competence analysis CTA.
 
 ## Source
 
-- `atlassian/05-site-structure-and-user-journeys.md` §3 (navigation), §4 (sitemap),
+- [`atlassian/05-site-structure-and-user-journeys.md`](../../atlassian/05-site-structure-and-user-journeys.md) §3 (navigation), §4 (sitemap),
   §5 (priority journeys)
-- `atlassian/03-best-practice-guide-b2b-marketing-site.md` §6 (information
+- [`atlassian/03-best-practice-guide-b2b-marketing-site.md`](../../atlassian/03-best-practice-guide-b2b-marketing-site.md) §6 (information
   architecture), §10.3 (platform/content/support distinction)

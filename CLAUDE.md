@@ -30,26 +30,29 @@ enforceable.
 
 ## Routing
 
-| Doing this                                              | Read first                            |
-| ------------------------------------------------------- | ------------------------------------- |
-| Writing or reviewing Norwegian copy                     | `.claude/rules/tone-of-voice.md`      |
-| Deciding audience, positioning, what counts as a lead   | `.claude/rules/brand-positioning.md`  |
-| Colours, type scale, capitalisation                     | `.claude/rules/design-tokens.md`      |
-| Buttons, cards, spacing, imagery, logo, motion          | `.claude/rules/design-components.md`  |
-| Navigation, sitemap, user journeys                      | `.claude/rules/site-structure.md`     |
-| Building or restructuring a page                        | `.claude/rules/page-structure.md`     |
-| CTAs, forms, conversion paths                           | `.claude/rules/cta-and-conversion.md` |
-| SEO, metadata, content strategy, thin-content decisions | `.claude/rules/seo-and-content.md`    |
-| Anything touching redirects or middleware               | `.claude/rules/redirects.md`          |
-| Analytics, HubSpot fields, lead classification          | `.claude/rules/tracking-and-leads.md` |
-| Pre-merge checks, launch readiness, accessibility       | `.claude/rules/qa-and-launch.md`      |
-| The AI analysis / benchmark tool                        | `.claude/rules/diagnostic-tool.md`    |
-| Building the benchmark table behind that tool           | `.claude/rules/diagnostic-benchmark.md` |
-| What the diagnostic report says and how                 | `.claude/rules/diagnostic-report.md`  |
-| Creating or moving a component, module or section       | `.claude/rules/component-structure.md` |
-| What a section owns vs a module                         | `.claude/rules/section-module-model.md` |
-| Sanity schemas, Portable Text, datasets                 | `.claude/rules/sanity-schema.md`      |
-| Writing GROQ, client config, caching                    | `.claude/rules/groq.md`               |
+Every rule lives in [`.claude/rules/`](.claude/rules/) — see its
+[index](.claude/rules/README.md) for the full list.
+
+| Doing this                                              | Read first                                                         |
+| ------------------------------------------------------- | ------------------------------------------------------------------ |
+| Writing or reviewing Norwegian copy                     | [`tone-of-voice.md`](.claude/rules/tone-of-voice.md)               |
+| Deciding audience, positioning, what counts as a lead   | [`brand-positioning.md`](.claude/rules/brand-positioning.md)       |
+| Colours, type scale, capitalisation                     | [`design-tokens.md`](.claude/rules/design-tokens.md)               |
+| Buttons, cards, spacing, imagery, logo, motion          | [`design-components.md`](.claude/rules/design-components.md)       |
+| Navigation, sitemap, user journeys                      | [`site-structure.md`](.claude/rules/site-structure.md)             |
+| Building or restructuring a page                        | [`page-structure.md`](.claude/rules/page-structure.md)             |
+| CTAs, forms, conversion paths                           | [`cta-and-conversion.md`](.claude/rules/cta-and-conversion.md)     |
+| SEO, metadata, content strategy, thin-content decisions | [`seo-and-content.md`](.claude/rules/seo-and-content.md)           |
+| Anything touching redirects or middleware               | [`redirects.md`](.claude/rules/redirects.md)                       |
+| Analytics, HubSpot fields, lead classification          | [`tracking-and-leads.md`](.claude/rules/tracking-and-leads.md)     |
+| Pre-merge checks, launch readiness, accessibility       | [`qa-and-launch.md`](.claude/rules/qa-and-launch.md)               |
+| The AI analysis / benchmark tool                        | [`diagnostic-tool.md`](.claude/rules/diagnostic-tool.md)           |
+| Building the benchmark table behind that tool           | [`diagnostic-benchmark.md`](.claude/rules/diagnostic-benchmark.md) |
+| What the diagnostic report says and how                 | [`diagnostic-report.md`](.claude/rules/diagnostic-report.md)       |
+| Creating or moving a component, module or section       | [`component-structure.md`](.claude/rules/component-structure.md)   |
+| What a section owns vs a module                         | [`section-module-model.md`](.claude/rules/section-module-model.md) |
+| Sanity schemas, Portable Text, datasets                 | [`sanity-schema.md`](.claude/rules/sanity-schema.md)               |
+| Writing GROQ, client config, caching                    | [`groq.md`](.claude/rules/groq.md)                                 |
 
 ## Commands
 

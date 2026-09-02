@@ -99,6 +99,6 @@ the homepage order in `06 §5.1`.
 
 - Repo-owner decision, 2026-09-02: adopt the section/module structure, layered on
   `atlassian/` for all values.
-- `atlassian/04-design-system.md` §5 (1200px max width, 24px minimum section gap,
+- [`atlassian/04-design-system.md`](../../atlassian/04-design-system.md) §5 (1200px max width, 24px minimum section gap,
   dark used sparingly, background alternation), §1 (palette)
-- `atlassian/06-page-briefs.md` §5 (per-page-type section order the model must express)
+- [`atlassian/06-page-briefs.md`](../../atlassian/06-page-briefs.md) §5 (per-page-type section order the model must express)

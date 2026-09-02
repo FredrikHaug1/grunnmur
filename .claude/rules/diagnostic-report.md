@@ -137,8 +137,8 @@ emphasis and order, nothing else.
 
 ## Source
 
-- `atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md`
+- [`atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md`](../../atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md)
   §1 (target functions), §7 (user flow, fork), §11.5 (benchmark-free framing),
   §13.2–13.3 (report rules and structure), §21 (core product principle)
-- `atlassian/projects/diagnostic-tool/project-and-expert-services-archetype.md` §5
+- [`atlassian/projects/diagnostic-tool/project-and-expert-services-archetype.md`](../../atlassian/projects/diagnostic-tool/project-and-expert-services-archetype.md) §5
   (worked report)

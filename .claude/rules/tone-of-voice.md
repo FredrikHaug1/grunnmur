@@ -107,11 +107,11 @@ was restored. Do not reintroduce the rest as if it were sourced.
 
 ## Source
 
-- `atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md`
+- [`atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md`](../../atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md)
   §13.2 (report rules, Norwegian bokmål, tone), §11.5 (public-sector framing)
-- `atlassian/projects/diagnostic-tool/project-and-expert-services-archetype.md` §5
+- [`atlassian/projects/diagnostic-tool/project-and-expert-services-archetype.md`](../../atlassian/projects/diagnostic-tool/project-and-expert-services-archetype.md) §5
   (sample report, tone note)
-- `atlassian/03-best-practice-guide-b2b-marketing-site.md` §5.2 (buyer problems),
+- [`atlassian/03-best-practice-guide-b2b-marketing-site.md`](../../atlassian/03-best-practice-guide-b2b-marketing-site.md) §5.2 (buyer problems),
   §5.3 (outcome messaging), §5.4 (banned language)
-- `atlassian/10-qa-and-launch.md` §3.1 (content QA), §3.2 (positioning QA)
-- `atlassian/06-page-briefs.md` §4.9 (buyer problem examples)
+- [`atlassian/10-qa-and-launch.md`](../../atlassian/10-qa-and-launch.md) §3.1 (content QA), §3.2 (positioning QA)
+- [`atlassian/06-page-briefs.md`](../../atlassian/06-page-briefs.md) §4.9 (buyer problem examples)

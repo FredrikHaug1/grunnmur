@@ -92,8 +92,8 @@ needs closing separately.
 
 - Repo-owner decisions, 2026-09-02 (naming, Norway-only scope, slugs, settings,
   Portable Text, datasets)
-- `atlassian/05-site-structure-and-user-journeys.md` §3 (navigation is
+- [`atlassian/05-site-structure-and-user-journeys.md`](../../atlassian/05-site-structure-and-user-journeys.md) §3 (navigation is
   marketing-owned, hence CMS-managed)
-- `atlassian/projects/handling-of-redirects.md` (path resolution needs, redirect
+- [`atlassian/projects/handling-of-redirects.md`](../../atlassian/projects/handling-of-redirects.md) (path resolution needs, redirect
   document shape)
-- `atlassian/10-qa-and-launch.md` §3.5 (one H1 per page)
+- [`atlassian/10-qa-and-launch.md`](../../atlassian/10-qa-and-launch.md) §3.5 (one H1 per page)

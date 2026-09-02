@@ -95,8 +95,8 @@ above is not optional and the missing-margin path in
 
 ## Source
 
-- `atlassian/projects/diagnostic-tool/competence-benchmark-architecture-spec-overview.md`
+- [`atlassian/projects/diagnostic-tool/competence-benchmark-architecture-spec-overview.md`](../../atlassian/projects/diagnostic-tool/competence-benchmark-architecture-spec-overview.md)
   §3 (data source caveat), §4 (benchmark table, sampling, roll-up), §5 (top
   performer), §6 (validation layer)
-- `atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md`
+- [`atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md`](../../atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md)
   §10 (benchmark model, metrics, outlier handling)

@@ -141,7 +141,7 @@ search visibility · brand search impact · user behaviour · improvements.
 
 ## Source
 
-- `atlassian/10-qa-and-launch.md` §2 (principles), §3.3–3.11 (QA stages), §4 (launch
+- [`atlassian/10-qa-and-launch.md`](../../atlassian/10-qa-and-launch.md) §2 (principles), §3.3–3.11 (QA stages), §4 (launch
   checklist), §5 (go/no-go), §6 (post-launch), §7 (bug severity)
-- `atlassian/03-best-practice-guide-b2b-marketing-site.md` §15 (technical and UX
+- [`atlassian/03-best-practice-guide-b2b-marketing-site.md`](../../atlassian/03-best-practice-guide-b2b-marketing-site.md) §15 (technical and UX
   requirements)

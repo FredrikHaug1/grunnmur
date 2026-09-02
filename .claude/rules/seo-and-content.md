@@ -105,10 +105,10 @@ Over-gating reduces trust and reach.
 
 ## Source
 
-- `atlassian/research/technical-seo-site-structure-visitor-journey.md` (ranking vs
+- [`atlassian/research/technical-seo-site-structure-visitor-journey.md`](../../atlassian/research/technical-seo-site-structure-visitor-journey.md) (ranking vs
   demand, thin content, index hygiene, blog dead-end, problems 5, 7, 8)
-- `atlassian/research/content-performance-and-what-to-change.md` (depth over volume,
+- [`atlassian/research/content-performance-and-what-to-change.md`](../../atlassian/research/content-performance-and-what-to-change.md) (depth over volume,
   buyer vocabulary, blog retention, catalogue trade-off)
-- `atlassian/10-qa-and-launch.md` §3.5 (SEO QA checklist)
-- `atlassian/03-best-practice-guide-b2b-marketing-site.md` §14.3 (gating)
-- `atlassian/06-page-briefs.md` §7 (SEO requirements)
+- [`atlassian/10-qa-and-launch.md`](../../atlassian/10-qa-and-launch.md) §3.5 (SEO QA checklist)
+- [`atlassian/03-best-practice-guide-b2b-marketing-site.md`](../../atlassian/03-best-practice-guide-b2b-marketing-site.md) §14.3 (gating)
+- [`atlassian/06-page-briefs.md`](../../atlassian/06-page-briefs.md) §7 (SEO requirements)

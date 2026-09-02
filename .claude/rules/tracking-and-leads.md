@@ -134,9 +134,9 @@ Named problems to solve, not background:
 
 ## Source
 
-- `atlassian/07-tracking-and-performance.md` §3 (sources), §7 (lead sources), §8
+- [`atlassian/07-tracking-and-performance.md`](../../atlassian/07-tracking-and-performance.md) §3 (sources), §7 (lead sources), §8
   (lead types), §9 (HubSpot fields), §11 (page KPIs), §13 (reporting principles)
-- `atlassian/02-target-audience-and-positioning.md` §1.4–1.6 (lead definitions)
-- `atlassian/research/technical-seo-site-structure-visitor-journey.md`
+- [`atlassian/02-target-audience-and-positioning.md`](../../atlassian/02-target-audience-and-positioning.md) §1.4–1.6 (lead definitions)
+- [`atlassian/research/technical-seo-site-structure-visitor-journey.md`](../../atlassian/research/technical-seo-site-structure-visitor-journey.md)
   (instrumentation gaps, scope note)
-- `atlassian/10-qa-and-launch.md` §3.6 (tracking QA)
+- [`atlassian/10-qa-and-launch.md`](../../atlassian/10-qa-and-launch.md) §3.6 (tracking QA)

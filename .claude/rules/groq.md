@@ -124,5 +124,5 @@ uncached from it. See [`redirects.md`](redirects.md).
 
 - Repo-owner decisions, 2026-09-02 (TypeGen, slug resolution, datasets, and the
   always-`true` `useCdn` rule adopted from the API-spike incident)
-- `atlassian/projects/handling-of-redirects.md` (cached redirect lookup requirement)
-- `atlassian/10-qa-and-launch.md` §3.9 (preview must render current content)
+- [`atlassian/projects/handling-of-redirects.md`](../../atlassian/projects/handling-of-redirects.md) (cached redirect lookup requirement)
+- [`atlassian/10-qa-and-launch.md`](../../atlassian/10-qa-and-launch.md) §3.9 (preview must render current content)

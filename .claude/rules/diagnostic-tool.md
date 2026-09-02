@@ -122,11 +122,11 @@ identification step.
 
 ## Source
 
-- `atlassian/projects/diagnostic-tool/competence-benchmark-architecture-spec-overview.md`
+- [`atlassian/projects/diagnostic-tool/competence-benchmark-architecture-spec-overview.md`](../../atlassian/projects/diagnostic-tool/competence-benchmark-architecture-spec-overview.md)
   (architecture, benchmark table, validation, email gate, settled parameters)
-- `atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md`
+- [`atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md`](../../atlassian/projects/diagnostic-tool/competence-to-margin-analysis-method-spec-v2.md)
   §11.4 (honesty rails), §13.4 (hypothesis not audit)
-- `atlassian/03-best-practice-guide-b2b-marketing-site.md` §12 (signature diagnostic
+- [`atlassian/03-best-practice-guide-b2b-marketing-site.md`](../../atlassian/03-best-practice-guide-b2b-marketing-site.md) §12 (signature diagnostic
   tools, disclaimer)
-- `atlassian/10-qa-and-launch.md` §3.8 (AI analysis tool QA)
-- `atlassian/05-site-structure-and-user-journeys.md` §4.7 (free analysis page)
+- [`atlassian/10-qa-and-launch.md`](../../atlassian/10-qa-and-launch.md) §3.8 (AI analysis tool QA)
+- [`atlassian/05-site-structure-and-user-journeys.md`](../../atlassian/05-site-structure-and-user-journeys.md) §4.7 (free analysis page)

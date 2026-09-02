@@ -92,12 +92,12 @@ happens after submission · use different CTAs for different intent levels.
 
 ## Source
 
-- `atlassian/05-site-structure-and-user-journeys.md` §6 (CTA hierarchy), §7
+- [`atlassian/05-site-structure-and-user-journeys.md`](../../atlassian/05-site-structure-and-user-journeys.md) §6 (CTA hierarchy), §7
   (page-level principle), §4.9 (demo/contact form)
-- `atlassian/06-page-briefs.md` §6 (CTA requirements)
-- `atlassian/03-best-practice-guide-b2b-marketing-site.md` §12.1–12.3 (conversion
+- [`atlassian/06-page-briefs.md`](../../atlassian/06-page-briefs.md) §6 (CTA requirements)
+- [`atlassian/03-best-practice-guide-b2b-marketing-site.md`](../../atlassian/03-best-practice-guide-b2b-marketing-site.md) §12.1–12.3 (conversion
   design), §12.4 (CTA copy)
-- `atlassian/research/technical-seo-site-structure-visitor-journey.md` (enterprise
+- [`atlassian/research/technical-seo-site-structure-visitor-journey.md`](../../atlassian/research/technical-seo-site-structure-visitor-journey.md) (enterprise
   page bounce, contact form problems 1 and 4)
-- `atlassian/research/content-performance-and-what-to-change.md` (contact form
+- [`atlassian/research/content-performance-and-what-to-change.md`](../../atlassian/research/content-performance-and-what-to-change.md) (contact form
   carrying too much)
